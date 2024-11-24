@@ -1,24 +1,291 @@
 .homeRoot{
-    background-color: #FFF5E4;
-    color: #CD5C08;
+    background-color: white;
+    color: black;
+}
+
+h1{
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+}
+.contact{
+    height: 100vh;
+    background-color: #F6F6F6;
+
+}
+
+.form-data{
+    display: flex;
+    padding-inline: 5%;
+    align-items: center;
+    justify-content: space-around;
+    padding-block: 2vh;
+}
+
+.contact-text{
+    width: 40%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin-inline: 5%;
+    gap: 2em;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: #3C3D37;
+}
+
+.main-text{
+    margin-inline-start: 10%;
+    font-size: 2em;
+    font-weight: bolder;
+    width: 40%;
+}
+
+.main-text p{
+    margin: 0.3em;
+}
+
+button{
+    all:unset;
+}
+
+.form-submit{
+    background-color: #2B2B2B;
+    color: white;
+    height: 3em;
+    width: 6em;
+    border-radius: 0.5em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.footer{
+    background-color: #F6F6F6;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 0.8em;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2em;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 2em;
+    width: 40%;
+    padding-bottom: 10vh;
+}
+
+.contact-form input{
+    all: unset;
+    margin-bottom: 1em;
+    height: 10vh;
+    width: 90%;
+    border-radius: 1em;
+    padding: 0.2em;
+    padding-inline: 1em;
+    background-color: #F9F9F9;
+}
+
+input:focus{
+    outline: #2B2B2B solid;
+}
+
+.contact-form textarea{
+    all: unset;
+    margin-bottom: 1em;
+    height: 20vh;
+    width: 90%;
+    border-radius: 1em;
+    padding: 0.2em;
+    padding-inline: 1em;
+    background-color: #F9F9F9;
+}
+
+nav{
+    height: 10vh;
+}
+
+.heading{
+    height: 7vh;
+}
+
+.main-display{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.topics{
+    width: 50%;
+}
+
+.body-holder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 55vh;
+}
+
+.radio-dis{
+    width: 35em;
+    height: 6em;
+    outline: 1.5px solid #2B2B2B;
+    border-radius: 1em;
+    position: relative;
+}
+
+
+.top-line, .bottom-line{
+    font-family: "Roboto Mono", monospace;;
+    top:0%;
+    height: 33%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.middle-line{
+    font-family: "Roboto Mono", monospace;;
+    top: 33%;
+    height: 33%;
+    width: 100%;
+    border-block: 1.5px solid green;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.bottom-line{
+    top:66%
+}
+
+.fl-s{
+    margin-inline-start: 1em;
+}
+
+.fl-e{
+    margin-inline-end: 1em;
+}
+.radio-mover{
+    height: 100%;
+    width: 1px;
+    outline: 1px solid red;
+    background-color: red;
+    position: absolute;
+}
+
+.knob{
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+    background-color: #2B2B2B;
+    display: flex;
+    align-items: center;
+}
+
+.knob-pointer{
+    width: 1em;
+    height: 0.15em;
+    background-color: red;
+    margin-inline: 0.3em;
+}
+
+.main{
     height: 100vh;
 }
-.header{
+
+
+.marquee-container {
+    width: 100%; /* Adjust based on your layout */
+    overflow: hidden;
+    position: relative;
+    height: 50px; /* Adjust based on item height */
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-inline: 5%;
+  }
+  
+  .marquee {
+    display: flex;
+    animation: marquee-animation 300s linear infinite;
+    white-space: nowrap; /* Prevent line breaks */
+  }
+
+  .marquee-item {
+     /* Spacing between items */
+    font-size: 20px; /* Adjust font size */
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  /* Keyframes for scrolling animation */
+  @keyframes marquee-animation {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%); /* Adjust to fit the duplicated content */
+    }
+  }
+  
+.dynamicWidth{
+    display: inline-block;
+    padding: 6px;
+    background-color: #F6F6F6;
+    margin: 0 20px;
+    border-radius: 10px;
 }
 
-.headerC{
+.lang-holder{
+    height: 26vh;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 30%;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.headerR{
-    display: flex;
-    width: 20%;
-    justify-content: space-evenly;
+.sub-title{
+    font-size: large;
+    margin-bottom: 1em;
+}
+
+.main-text > p:hover{
+    animation: pulse;
+    animation-duration: 2s;
+}
+
+.under-radio{
+    width: 32em;
+    
+}
+
+.topic-holder{
+    padding: 6px;
+    display: inline-block;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+}
+
+.lang-title{
+    margin-inline-start: 3em;
+    margin-bottom: 1em;
 }
